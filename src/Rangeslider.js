@@ -174,6 +174,7 @@ class Slider extends Component {
     const { value, min, max, step, onChange } = this.props
     let sliderValue
 
+    /* eslint-disable default-case */
     switch (keyCode) {
       case 38:
       case 39:
@@ -186,6 +187,7 @@ class Slider extends Component {
         onChange && onChange(sliderValue, e)
         break
     }
+    /* eslint-enable default-case */
   };
 
   /**
